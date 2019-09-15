@@ -1,4 +1,5 @@
 # CloudHub Partitionable ObjectStore
+![Maven Central](https://img.shields.io/maven-central/v/com.mariocairone.mule/cloudhub-partitionable-objectstore?style=flat-square) ![GitHub](https://img.shields.io/github/license/mariocairone/cloudhub-partitionable-objectstore) ![GitHub issues](https://img.shields.io/github/issues/mariocairone/cloudhub-partitionable-objectstore) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mariocairone/cloudhub-partitionable-objectstore?style=social)
 
 The recommended approach to implement a distributed cache in CloudHub, synchronized for all the workers, is to use the default CloudHub persistent Object Store (Using Object Store V2).
 The [Mulesoft Knowledge Base][f338c593] article describes such solution and provide a sample implementation.
@@ -9,6 +10,41 @@ The PartitionableMonitorObjectStore allows to use a different partition for each
 The image below shows an example of how it will look like in the Runtime Manager console:    
 <br/>
 ![Object Store](images/ObjectStoreView.PNG)
+
+## Setup
+
+As a dependency of your Maven project:
+
+```xml
+<dependency>
+   <groupId>com.mariocairone.mule</groupId>
+   <artifactId>cloudhub-partitionable-objectstore</artifactId>
+   <version>1.0.0</version>
+</dependency>
+```
+
+You can also build the `.jar` file yourself, assuming you have Maven and JDK 1.8+ installed:
+```shell
+mvn clean install
+```
+
+The resulting `.jar` file will be located in the `target/` folder.
+
+You can also find `SNAPSHOT` builds of the latest and greatest changes to the master branch in the SonaType snapshots repository.
+
+To add that snapshot repository to your Maven pom.xml use the following snippet:
+```xml
+<repositories>
+    <repository>
+        <id>oss-sonatype</id>
+        <name>oss-sonatype</name>
+        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+```
 
 ## Configuration
 
