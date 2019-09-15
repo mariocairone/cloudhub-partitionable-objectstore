@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mariocairone.mule</groupId>
 	<artifactId>cloudhub-partitionable-objectstore</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>ObjectStore to implement a distributed cache in CloudHub</description>
 	<url>https://github.com/mariocairone/cloudhub-partitionable-objectstore</url>
