@@ -11,6 +11,10 @@ The image below shows an example of how it will look like in the Runtime Manager
 <br/>
 ![Object Store](images/ObjectStoreView.PNG)
 
+## Supported Mule Versions
+
+- Mule 3.x
+
 ## Setup
 
 As a dependency of your Maven project:
